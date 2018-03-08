@@ -16,25 +16,26 @@
     <div class="wrapper">
       <header>
         <h1>3D Audio Danger Alert</h1>
-        <p></p>
+        <p>Using Decawave sensors and NRF52840 boards, we plan on helping construction workers become more aware of their surroundings by producing 3D audio to their headphones using triangulation techniques to map out 2D localization.</p>
       </header>
       <section>
-        <h3>
+<h3>
 <a id="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Welcome to our 18-500 Capstone Project</h3>
 
-<p>Using Decawave sensors and NRF52840 boards, we plan on helping construction workers become more aware of their surroundings</p>
+<p></p>
 
 <h3>
-<a id="creating-pages-manually" class="anchor" href="#creating-pages-manually" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>FSample</h3>
+<a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>March 8th</h3>
 
+<h4>John</h4>
+<p>On Monday (3/6/2018) we received the Nordic NRF52 board that we ordered, which will act as the master for the Decawave sensor boards. I succeeded in setting up my local environment to develop for and program the NRF. I decided to choose Segger Embedded Studio as the IDE as it is cross-platform and thus can be used my all group members, as we use a mix of Windows/macOS/Linux. Using Nordic’s command-line tools and SDK, I successfully built a FreeRTOS Blink LED example project, erased flash on the NRF, and flashed the board. The NRF’s LEDs blinked as expected. Initial setup of board & environment is complete.</p>
+
+<h4>Marie</h4>
+<p>This week my responsibility was to prepare for development with the Decawave boards (DWM1001-DEV), so that we could get started once the boards arrived. I started by creating a Google Doc for Decawave related information. I compiled links to documents like the Datasheet, API guide, and Firmware User Guide. I read through some of the documents and set up the development environment for our boards. I downloaded a Linux VM with the Decawave firmware and necessary tools, and followed set-up instructions until the point where I needed the actual board to continue. </p>
+
+<h4>Taichi</h4>
 <p>
-  Sample
-</p>
-<p>
-  Sample
-</p>
-<p>
-  Sample
+This week, I explored how to implement the 3D audio system in order to create a demo system that can be used to show progress towards the end goal. To do this, I first set out and set up an appointment with Professor Sullivan to discuss what variables and factors were needed in order to have a successful product. Before the meeting, our team naively expected to only need the tuple (r,theta) in order to produce 3D audio. However, after discussing with Professor Sullivan, I learned that we need to calculate (r_left, theta_left) and (r_right, theta_right) for each ear in relation to the source, find the distance between the two ears, and produce some delay to the ear farther to the source. Also, it was pointed out during my meeting with Prof. Sullivan that it would hard to distinguish between objects that are in front vs behind as a lot of that sound is processed in real life due to the biology and structure of our ear. I will try to manipulate the signal produced when a source is behind the person as opposed to in front. Lastly, although I was going to create my demo in python, Prof. Sullivan suggested to do stuff like this in Matlab, so I will have some form of demo created and published on this blog as soon as I get that done.
 </p>
 
 <p>
